@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "../assets/logo.jpg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ const Header = () => {
           {/* Logo */}
           <NavLink to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <img 
-              src="/src/assets/logo.jpg" 
+              src={logo} 
               alt="Barkulan Cafe Logo" 
               className="w-10 h-10 rounded-full object-cover"
             />
