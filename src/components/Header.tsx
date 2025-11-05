@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Instagram } from "lucide-react";
 import { useState } from "react";
 import logo from "../assets/logo.jpg";
 
@@ -19,9 +19,9 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <NavLink to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <img 
-              src={logo} 
-              alt="Barkulan Cafe Logo" 
+            <img
+              src={logo}
+              alt="Barkulan Cafe Logo"
               className="w-10 h-10 rounded-full object-cover"
             />
             <span className="text-2xl font-bold text-primary">
@@ -45,6 +45,15 @@ const Header = () => {
                 {link.label}
               </NavLink>
             ))}
+            <a
+              href="https://www.instagram.com/barkulan_cafe"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-primary transition-colors"
+              aria-label="Follow us on Instagram"
+            >
+              <Instagram size={24} />
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -75,6 +84,16 @@ const Header = () => {
                 {link.label}
               </NavLink>
             ))}
+            <a
+              href="https://www.instagram.com/barkulan_cafe"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-base font-medium text-foreground hover:text-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <Instagram size={20} />
+              Instagram
+            </a>
           </div>
         )}
       </nav>

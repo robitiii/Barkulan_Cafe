@@ -22,30 +22,32 @@ const About = () => {
             <div>
               <img
                 src={aboutImage}
-                alt="Barkulan Cafe interior"
+                alt="Ismail Key at Barkulan Cafe"
                 className="rounded-lg shadow-xl w-full h-auto object-cover"
               />
             </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                Where It All Began
+                The Story of Ismail Key
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Barkulan Cafe was born from a simple dream: to create a space where people could 
-                  connect over exceptional coffee. What started as a small neighborhood cafe has 
-                  grown into a vibrant community hub.
+                  Barkulan Cafe was founded by Ismail Key, a passionate entrepreneur with a vision
+                  to create more than just another coffee shop. Ismail believed in the power of
+                  community and the magic that happens when people gather over exceptional coffee.
                 </p>
                 <p>
-                  We believe that the best conversations happen over a great cup of coffee. That's 
-                  why we've dedicated ourselves to sourcing the finest beans, perfecting our craft, 
-                  and creating an environment where everyone feels welcome.
+                  Starting from humble beginnings, Ismail poured his heart into every aspect of
+                  Barkulan Cafe. From carefully selecting the finest beans to designing a welcoming
+                  space that feels like home, every detail reflects his commitment to quality and
+                  community.
                 </p>
                 <p>
-                  Today, Barkulan Cafe is more than just a place to grab your morning brew. It's 
-                  a gathering spot for entrepreneurs, creatives, and neighbors. Through our weekly 
-                  networking events and community programs, we're building connections that last 
-                  beyond the coffee cup.
+                  Today, Ismail's vision has come to life. Barkulan Cafe stands as a testament to
+                  his dedication, serving as a gathering spot where entrepreneurs, creatives, and
+                  neighbors connect, collaborate, and build lasting relationships. Through weekly
+                  networking events and a warm, inviting atmosphere, Ismail's dream of fostering
+                  meaningful connections continues to thrive.
                 </p>
               </div>
             </div>

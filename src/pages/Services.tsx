@@ -1,6 +1,11 @@
 import { Coffee, Croissant, Wifi, Users } from "lucide-react";
 import ServiceCard from "@/components/ServiceCard";
 import EventCard from "@/components/EventCard";
+import coffeeStuff from "@/assets/coffe stuff.jpg";
+import coffeeBiscuit from "@/assets/coffe biscuit.jpg";
+import halfmoonCoffee from "@/assets/halfmoon_coffee.jpg";
+import croissantDiet from "@/assets/crossiantDiet.jpg";
+import rotiCoffee from "@/assets/roticoffe.jpg";
 
 const Services = () => {
   const services = [
@@ -24,6 +29,14 @@ const Services = () => {
       title: "Co-working Space",
       description: "Comfortable seating and a productive atmosphere for remote workers and students.",
     },
+  ];
+
+  const menuImages = [
+    { src: coffeeStuff, alt: "Barkulan Cafe specialty drinks" },
+    { src: coffeeBiscuit, alt: "Coffee and biscuits" },
+    { src: halfmoonCoffee, alt: "Half moon coffee creation" },
+    { src: croissantDiet, alt: "Fresh croissants and pastries" },
+    { src: rotiCoffee, alt: "Roti with coffee" },
   ];
 
   const weeklyEvents = [
@@ -91,6 +104,29 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
               <ServiceCard key={index} {...service} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Menu Gallery Section */}
+      <section className="py-16 bg-muted">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">
+            Our Menu Highlights
+          </h2>
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+            A taste of what we offer
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            {menuImages.map((image, index) => (
+              <div key={index} className="aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
             ))}
           </div>
         </div>

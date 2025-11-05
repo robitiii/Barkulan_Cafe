@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Instagram } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import EventCard from "@/components/EventCard";
 import heroImage from "@/assets/hero-home.jpg";
@@ -38,13 +39,24 @@ const Home = () => {
         subtitle="Where Great Coffee Meets Great People"
         backgroundImage={heroImage}
       >
-        <Button
-          size="lg"
-          onClick={() => navigate("/services")}
-          className="bg-primary hover:bg-primary/90 text-lg px-8 py-6"
-        >
-          Explore Events
-        </Button>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Button
+            size="lg"
+            onClick={() => navigate("/services")}
+            className="bg-primary hover:bg-primary/90 text-lg px-8 py-6"
+          >
+            Explore Events
+          </Button>
+          <Button
+            size="lg"
+            variant="outline"
+            onClick={() => window.open("https://www.instagram.com/barkulan_cafe", "_blank")}
+            className="text-lg px-8 py-6 gap-2"
+          >
+            <Instagram className="w-5 h-5" />
+            Follow Us
+          </Button>
+        </div>
       </HeroSection>
 
       {/* Featured Events Section */}
@@ -68,8 +80,8 @@ const Home = () => {
             More Than Just Coffee
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Barkulan Cafe is your neighborhood hub for connection, creativity, and collaboration. 
-            Join us for weekly networking events, enjoy our premium coffee, and become part of a 
+            Barkulan Cafe is your neighborhood hub for connection, creativity, and collaboration.
+            Join us for weekly networking events, enjoy our premium coffee, and become part of a
             thriving community.
           </p>
         </div>
