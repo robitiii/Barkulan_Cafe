@@ -1,4 +1,5 @@
 import aboutImage from "@/assets/about-cafe.jpg";
+import ismailImage from "@/assets/The-owner(Boss).jpg";
 
 const About = () => {
   return (
@@ -64,6 +65,43 @@ const About = () => {
               To foster meaningful connections within our community through exceptional coffee, 
               warm hospitality, and engaging events that bring people together.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Ismail Key Section */}
+      <section className="py-16 bg-muted">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+                Meet Ismail Key
+              </h2>
+              <div className="space-y-4 text-muted-foreground">
+                <p>
+                  Ismail Key is the visionary behind Barkulan Cafe, a passionate entrepreneur who
+                  transformed his love for exceptional coffee and community into a thriving business.
+                </p>
+                <p>
+                  With meticulous attention to quality and an unwavering commitment to his customers,
+                  Ismail has carefully sourced the finest coffee beans and created an atmosphere that
+                  brings people together. His dedication to excellence is evident in every aspect of
+                  the cafe, from the carefully crafted beverages to the warm, welcoming environment.
+                </p>
+                <p>
+                  Ismail's journey exemplifies the power of passion and perseverance. His vision
+                  continues to inspire daily as Barkulan Cafe grows into a beloved community gathering
+                  place where meaningful connections are made over great coffee.
+                </p>
+              </div>
+            </div>
+            <div className="order-1 lg:order-2">
+              <img
+                src={ismailImage}
+                alt="Ismail Key, founder of Barkulan Cafe"
+                className="rounded-lg shadow-xl w-full h-auto object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
